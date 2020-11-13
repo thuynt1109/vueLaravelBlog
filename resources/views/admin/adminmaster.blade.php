@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 3 | Blank Page</title>
+    <title>Trang quản lý Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -50,31 +50,37 @@
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item has-treeview">
-                        <router-link to="/home" class="nav-link">
+                        <!-- <router-link to="/home" class="nav-link"> -->
+                        <a href="#" class="nav-link">
                             <i class="nav-icon fa fa-dashboard"></i>
                             <p>
                                Trang chủ
                                 <i class="right fa fa-angle-left"></i>
                             </p>
-                        </router-link>
+                            </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link to="/category-list" class="nav-link">
+                        <!-- <router-link to="/category-list" class="nav-link"> -->
+                        <a href="#" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Danh mục
 
                             </p>
-                        </router-link>
+                            </a>
+                        <!-- </router-link> -->
                     </li>
                     <li class="nav-item">
-                        <router-link to="/post-list"  class="nav-link">
+                        <!-- <router-link to="/post-list"  class="nav-link"> -->
+                        <a href="#" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Bài đăng
                                 <span class="right badge badge-danger">New</span>
                             </p>
-                        </router-link>
+                            </a>
+                        <!-- </router-link> -->
                     </li>
 
                 </ul>
@@ -84,10 +90,44 @@
         <!-- /.sidebar -->
     </aside>
 
+
+
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <admin-main></admin-main>
+        <!-- <admin-main></admin-main> -->
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Title</h3>
+
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fa fa-minus"></i></button>
+                    <button type="button" class="btn btn-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fa fa-times"></i></button>
+                </div>
+            </div>
+            <div class="card-body">
+                Start creating your amazing application .....!
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                Footer
+            </div>
+            <!-- /.card-footer-->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+
+    <example-component></example-component>
+
     </div>
     <!-- /.content-wrapper -->
 
